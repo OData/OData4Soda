@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using ApprovalTests;
 using ApprovalTests.Reporters;
 using Microsoft.Data.OData;
 using NUnit.Framework;
@@ -9,9 +10,11 @@ using Socrata;
 
 namespace Service.Tests
 {
-	[TestFixture, UseReporter(typeof(DiffReporter))]
+	[TestFixture, UseReporter(typeof (DiffReporter))]
 	public class SodaToODataConverterTests
 	{
+		private static readonly DateTimeOffset FeedUpdateTime = DateTimeOffset.Parse("2011-12-03T15:50:26-08:00");
+
 		private class TestMessage : IODataResponseMessage
 		{
 			private readonly Dictionary<string, string> headers = new Dictionary<string, string>();
@@ -60,10 +63,9 @@ namespace Service.Tests
 			var converter = new SodaToODataConverter(testMessage, new Uri("http://fake"), TestData.TopLevelSodaResponse);
 			var payload = new JsonPayload(TestData.SodaResponseFor(TestData.TopLevelSodaResponse));
 			converter.ConvertFeed(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative),
-			                      payload);
+			                      payload, FeedUpdateTime);
 
-			var text = Encoding.UTF8.GetString(stream.ToArray());
-			Console.WriteLine(text);
+			Approvals.Approve(Encoding.UTF8.GetString(stream.ToArray()) + "\r\n");
 		}
 
 		[Test]
@@ -77,8 +79,7 @@ namespace Service.Tests
 			converter.ConvertMetadata(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative),
 			                          payload);
 
-			var text = Encoding.UTF8.GetString(stream.ToArray());
-			Console.WriteLine(text);
+			Approvals.Approve(Encoding.UTF8.GetString(stream.ToArray()) + "\r\n");
 		}
 	}
 }

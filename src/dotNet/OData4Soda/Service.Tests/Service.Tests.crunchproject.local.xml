@@ -10,5 +10,11 @@
     <NamedTestSelector>
       <TestName>Service.Tests.LoadFullCachedResponses.LoadChicagoPoliceDepartments</TestName>
     </NamedTestSelector>
+    <NamedTestSelector>
+      <TestName>Service.Tests.SodaToODataConverterTests.FeedTest</TestName>
+    </NamedTestSelector>
+    <NamedTestSelector>
+      <TestName>Service.Tests.SodaToODataConverterTests.MetadataTest</TestName>
+    </NamedTestSelector>
   </IgnoredTests>
 </ProjectConfiguration>

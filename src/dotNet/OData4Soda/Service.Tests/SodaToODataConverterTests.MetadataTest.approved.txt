@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <edmx:DataServices m:DataServiceVersion="3.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+    <Schema Namespace="OData4Socrata" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <ComplexType Name="url">
+        <Property Name="url" Type="Edm.String" />
+      </ComplexType>
+      <ComplexType Name="phone">
+        <Property Name="phone_number" Type="Edm.String" />
+        <Property Name="phone_type" Type="Edm.String" />
+      </ComplexType>
+      <ComplexType Name="location">
+        <Property Name="human_address" Type="Edm.String" />
+        <Property Name="latitude" Type="Edm.String" />
+        <Property Name="longitude" Type="Edm.String" />
+        <Property Name="machine_address" Type="Edm.String" />
+        <Property Name="needs_recoding" Type="Edm.Boolean" Nullable="false" />
+      </ComplexType>
+      <EntityType Name="Police_Stations">
+        <Property Name="DISTRICT" Type="Edm.String" />
+        <Property Name="ADDRESS" Type="Edm.String" />
+        <Property Name="CITY" Type="Edm.String" />
+        <Property Name="STATE" Type="Edm.String" />
+        <Property Name="ZIP" Type="Edm.String" />
+        <Property Name="WEBSITE" Type="OData4Socrata.url" Nullable="false" />
+        <Property Name="PHONE" Type="OData4Socrata.phone" Nullable="false" />
+        <Property Name="FAX" Type="Edm.String" />
+        <Property Name="TTY" Type="Edm.String" />
+        <Property Name="LOCATION" Type="OData4Socrata.location" Nullable="false" />
+      </EntityType>
+      <EntityContainer Name="">
+        <EntitySet Name="Police_Stations" EntityType="OData4Socrata.Police_Stations" />
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

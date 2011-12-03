@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml">
+  <id>http://fake/SomethingOData</id>
+  <title />
+  <updated>2011-12-03T15:50:26-08:00</updated>
+  <entry>
+    <id>8518106A-32BD-4BAC-885D-96B7FDB34F34</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T20:53:40Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>Headquarters</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>3510 S Michigan Ave</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath</d:url>
+        </d:WEBSITE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.62330200626332</d:longitude>
+          <d:latitude>41.83086072588734</d:latitude>
+          <d:human_address>{"address":"3510 S Michigan Ave","city":"Chicago","state":"IL","zip":"60653"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60653</d:ZIP>
+        <d:CITY>Chicago</d:CITY>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>0FE31F03-2C78-46A1-BA7E-609DA3020BAB</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:43:07Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>1</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>1718 S State St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District1</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-745-4290</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.62734256712464</d:longitude>
+          <d:latitude>41.85882087432612</d:latitude>
+          <d:human_address>{"address":"1718 S State St","city":"Chicago","state":"IL","zip":"60616"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60616</d:ZIP>
+        <d:TTY>312-745-3693</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-745-3694</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>FA1E611F-E3E2-4214-AB93-E9A2038FEBA4</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:42:39Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>2</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>5101 S Wentworth Ave</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District2</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-747-8366</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.630663656445</d:longitude>
+          <d:latitude>41.8017738753714</d:latitude>
+          <d:human_address>{"address":"5101 S Wentworth Ave","city":"Chicago","state":"IL","zip":"60609"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60609</d:ZIP>
+        <d:TTY>312-747-6656</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-747-5396</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>4A4F311D-DB63-4971-87CA-98053B7001B6</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:42:17Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>3</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>7040 S Cottage Grove Ave</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District3</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-747-8201</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.6056617928308</d:longitude>
+          <d:latitude>41.76697112291843</d:latitude>
+          <d:human_address>{"address":"7040 S Cottage Grove Ave","city":"Chicago","state":"IL","zip":"60637"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60637</d:ZIP>
+        <d:TTY>312-747-9168</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-747-5479</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>32F09548-7A6E-462C-86F1-78DE8AD333BA</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:41:58Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>4</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>2255 E 103rd St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District4</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-747-8205</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.56718279470178</d:longitude>
+          <d:latitude>41.70778489172678</d:latitude>
+          <d:human_address>{"address":"2255 E 103rd St","city":"Chicago","state":"IL","zip":"60617"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60617</d:ZIP>
+        <d:TTY>312-747-9169</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-747-5276</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>1E67F8FC-0838-4DFA-942C-12C0DC9D862D</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:41:40Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>5</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>727 E 111th St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District5</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-747-8210</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.60536435875626</d:longitude>
+          <d:latitude>41.69279473591493</d:latitude>
+          <d:human_address>{"address":"727 E 111th St","city":"Chicago","state":"IL","zip":"60628"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60628</d:ZIP>
+        <d:TTY>312-747-9170</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-747-5935</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>40CAE5DD-FAEB-4A1A-AD0A-AC77DD00D6ED</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:41:20Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>6</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>7808 S Halsted St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District6</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-745-3610</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.64414141672431</d:longitude>
+          <d:latitude>41.7522817574851</d:latitude>
+          <d:human_address>{"address":"7808 S Halsted St","city":"Chicago","state":"IL","zip":"60620"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60620</d:ZIP>
+        <d:TTY>312-745-3639</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-745-3649</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>398DE9E3-1D18-4E57-A4D8-266C2EAFBB35</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:41:01Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>7</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>1438 W 63rd St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District7</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-747-8220</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.65945323490796</d:longitude>
+          <d:latitude>41.77965870830844</d:latitude>
+          <d:human_address>{"address":"1438 W 63rd St","city":"Chicago","state":"IL","zip":"60636"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60636</d:ZIP>
+        <d:TTY>312-747-6652</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-747-6558</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>28CF2F81-9340-4AC2-AECD-38F67BEE89B2</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:40:43Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>8</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>3420 W 63rd St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District8</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-747-8730</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.70878104821506</d:longitude>
+          <d:latitude>41.77899321000677</d:latitude>
+          <d:human_address>{"address":"3420 W 63rd St","city":"Chicago","state":"IL","zip":"60629"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60629</d:ZIP>
+        <d:TTY>312-747-8116</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-747-8545</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>A85194EE-7DD4-475F-9A11-C0524AD6227A</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:40:26Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>9</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>3120 S Halsted St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District9</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-747-8227</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.64661990954984</d:longitude>
+          <d:latitude>41.83750310123302</d:latitude>
+          <d:human_address>{"address":"3120 S Halsted St","city":"Chicago","state":"IL","zip":"60608"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60608</d:ZIP>
+        <d:TTY>312-747-9172</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-747-5329</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>DEC786A2-F405-41A2-973E-ABD4C236120B</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:40:09Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>10</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>3315 W Ogden Ave</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District10</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-747-7511</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.70840333296276</d:longitude>
+          <d:latitude>41.85636188418744</d:latitude>
+          <d:human_address>{"address":"3315 W Ogden Ave","city":"Chicago","state":"IL","zip":"60623"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60623</d:ZIP>
+        <d:TTY>312-747-7471</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-747-7429</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>B2F9A0B6-2D41-4630-86EA-4F2DA5F4DB1D</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:39:52Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>11</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>3151 W Harrison St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District11</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-746-8386</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.70519897133927</d:longitude>
+          <d:latitude>41.873690811457</d:latitude>
+          <d:human_address>{"address":"3151 W Harrison St","city":"Chicago","state":"IL","zip":"60612"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60612</d:ZIP>
+        <d:TTY>312-746-5151</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-746-4281</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>F4078973-35B5-4994-AA4A-535B43185486</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:39:34Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>12</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>100 S Racine Ave</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District12</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-746-8396</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.65715796324291</d:longitude>
+          <d:latitude>41.88031148430877</d:latitude>
+          <d:human_address>{"address":"100 S Racine Ave","city":"Chicago","state":"IL","zip":"60607"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60607</d:ZIP>
+        <d:TTY>312-746-9868</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-746-4248</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>6ACBC934-FEFF-495E-98A9-DBF3D5CC9AFF</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:39:13Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>13</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>937 N Wood St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District13</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-746-8350</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.67202575687757</d:longitude>
+          <d:latitude>41.8988188771907</d:latitude>
+          <d:human_address>{"address":"937 N Wood St","city":"Chicago","state":"IL","zip":"60622"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60622</d:ZIP>
+        <d:TTY>312-746-5999</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-746-4235</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>7F0B1FDC-A9E2-4052-AF45-FA550F8BF23A</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:38:52Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>14</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>2150 N California Ave</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District14</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-744-8290</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.69732502896069</d:longitude>
+          <d:latitude>41.92125066466082</d:latitude>
+          <d:human_address>{"address":"2150 N California Ave","city":"Chicago","state":"IL","zip":"60647"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60647</d:ZIP>
+        <d:TTY>312-744-8260</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-744-2422</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>257F40E6-2324-44DA-92FA-B1ADEA51DB2D</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:38:35Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>15</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>5701 W Madison St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District15</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-743-1440</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.76818126825033</d:longitude>
+          <d:latitude>41.87978022983041</d:latitude>
+          <d:human_address>{"address":"5701 W Madison St","city":"Chicago","state":"IL","zip":"60644"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60644</d:ZIP>
+        <d:TTY>312-743-1485</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-743-1366</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>C27E321B-F628-4C79-86C7-D1B883E99568</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:38:15Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>16</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>5151 N Milwaukee Ave</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District16</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-742-4480</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.76623800785116</d:longitude>
+          <d:latitude>41.974188798165315</d:latitude>
+          <d:human_address>{"address":"5151 N Milwaukee Ave","city":"Chicago","state":"IL","zip":"60630"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60630</d:ZIP>
+        <d:TTY>312-742-4423</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-742-4421</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>36EF271C-656B-4824-BD06-BD214B7F6A43</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:37:52Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>17</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>4650 N Pulaski Rd</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District17</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-742-4410</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.72816143794648</d:longitude>
+          <d:latitude>41.966052192101166</d:latitude>
+          <d:human_address>{"address":"4650 N Pulaski Rd","city":"Chicago","state":"IL","zip":"60630"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60630</d:ZIP>
+        <d:TTY>312-742-5451</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-742-5411</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>DAFF4553-A73E-4F3D-B6A6-D24714E919F4</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:37:35Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>18</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>1160 N Larrabee St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District18</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-742-5870</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.64353523498934</d:longitude>
+          <d:latitude>41.90311763649074</d:latitude>
+          <d:human_address>{"address":"1160 N Larrabee St","city":"Chicago","state":"IL","zip":"60610"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60610</d:ZIP>
+        <d:TTY>312-742-5773</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-742-5771</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>72E37562-D949-469B-B5F4-563663571C5A</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:37:19Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>19</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>2452 W Belmont Ave</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District19</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-744-5983</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.6895222785126</d:longitude>
+          <d:latitude>41.93948016174912</d:latitude>
+          <d:human_address>{"address":"2452 W Belmont Ave","city":"Chicago","state":"IL","zip":"60618"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60618</d:ZIP>
+        <d:TTY>312-744-9872</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-744-4437</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>62303A50-B037-4B66-BE35-96780CDECF8C</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:37:03Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>20</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>5400 N Lincoln Ave</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District20</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-742-8714</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.69301593304144</d:longitude>
+          <d:latitude>41.97954202254066</d:latitude>
+          <d:human_address>{"address":"5400 N Lincoln Ave","city":"Chicago","state":"IL","zip":"60625"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60625</d:ZIP>
+        <d:TTY>312-742-8841</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-742-8803</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>3E813253-CA28-4675-BD5E-16F266242E67</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:36:44Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>21</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>300 E 29th St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District21</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-747-8340</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.62003595036374</d:longitude>
+          <d:latitude>41.84226950798831</d:latitude>
+          <d:human_address>{"address":"300 E 29th St","city":"Chicago","state":"IL","zip":"60616"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60616</d:ZIP>
+        <d:TTY>312-747-6655</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-747-5919</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>4607A0F7-41A4-456F-B456-F820E7481A96</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:36:27Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>22</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>1900 W Monterey Ave</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District22</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-745-0570</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.66855780581959</d:longitude>
+          <d:latitude>41.691350048962875</d:latitude>
+          <d:human_address>{"address":"1900 W Monterey Ave","city":"Chicago","state":"IL","zip":"60643"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60643</d:ZIP>
+        <d:TTY>312-745-0569</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-745-0814</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>6FFB5725-A09D-4F7C-9F90-A2DC8D7C33D1</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-03-28T14:58:31Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>23</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>850 W Addison St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District23</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-744-8320</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.64947786133158</d:longitude>
+          <d:latitude>41.94665927496925</d:latitude>
+          <d:human_address>{"address":"3600 N Halsted St","city":"Chicago","state":"IL","zip":"60613"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60613</d:ZIP>
+        <d:TTY>312-744-8011</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-744-4481</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>B0C08223-F374-4039-904B-EE30B4AE1F88</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:35:45Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>24</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>6464 N Clark St</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District24</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-744-5907</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.67118638353655</d:longitude>
+          <d:latitude>41.99944797184307</d:latitude>
+          <d:human_address>{"address":"6464 N Clark St","city":"Chicago","state":"IL","zip":"60626"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60626</d:ZIP>
+        <d:TTY>312-744-7603</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-744-6928</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+  <entry>
+    <id>620E8058-C5ED-4D1F-81F9-FAFD04CC5143</id>
+    <category term="OData4Socrata.Police_Stations" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <title />
+    <published>2011-01-05T20:52:04Z</published>
+    <updated>2011-01-05T21:28:32Z</updated>
+    <author>
+      <name />
+    </author>
+    <content type="application/xml">
+      <m:properties>
+        <d:DISTRICT>25</d:DISTRICT>
+        <d:STATE>IL</d:STATE>
+        <d:ADDRESS>5555 W Grand Ave</d:ADDRESS>
+        <d:WEBSITE m:type="OData4Socrata.url">
+          <d:url>https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District25</d:url>
+        </d:WEBSITE>
+        <d:PHONE m:type="OData4Socrata.phone">
+          <d:phone_number>312-746-8605</d:phone_number>
+        </d:PHONE>
+        <d:LOCATION m:type="OData4Socrata.location">
+          <d:needs_recoding m:type="Edm.Boolean">false</d:needs_recoding>
+          <d:longitude>-87.76465420759772</d:longitude>
+          <d:latitude>41.91848587824693</d:latitude>
+          <d:human_address>{"address":"5555 W Grand Ave","city":"Chicago","state":"IL","zip":"60639"}</d:human_address>
+        </d:LOCATION>
+        <d:ZIP>60639</d:ZIP>
+        <d:TTY>312-746-8383</d:TTY>
+        <d:CITY>Chicago</d:CITY>
+        <d:FAX>312-746-4353</d:FAX>
+      </m:properties>
+    </content>
+  </entry>
+</feed>

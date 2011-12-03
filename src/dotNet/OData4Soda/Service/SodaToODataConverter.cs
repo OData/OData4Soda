@@ -47,7 +47,7 @@ namespace Service
 			}
 		}
 
-		public void ConvertFeed(Uri relativeODataUri, Uri relativeSodaUri, JsonPayload jsonPayload)
+		public void ConvertFeed(Uri relativeODataUri, Uri relativeSodaUri, JsonPayload jsonPayload, DateTimeOffset feedUpdateTime)
 		{
 			var jsonObject = jsonPayload.JsonObject;
 
@@ -70,6 +70,11 @@ namespace Service
 				var feedWriter = writer.CreateODataFeedWriter();
 
 				var feed = new ODataFeed();
+
+				feed.SetAnnotation(new AtomFeedMetadata
+				                   	{
+				                   		Updated = feedUpdateTime,
+				                   	});
 
 				feed.Id = new Uri(ODataEndpointUri, relativeODataUri.OriginalString).OriginalString;
 
