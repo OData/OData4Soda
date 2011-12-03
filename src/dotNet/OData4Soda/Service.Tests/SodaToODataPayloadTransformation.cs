@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace Service.Tests
 {
 	[TestFixture, UseReporter(typeof(DiffReporter))]
-	public class Class1
+	public class SodaToODataPayloadTransformation
 	{
 		[Test]
 		public void AlwaysPasses()
