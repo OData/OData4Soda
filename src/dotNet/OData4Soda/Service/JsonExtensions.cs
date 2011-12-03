@@ -2,7 +2,7 @@
 using System.Linq;
 using Newtonsoft.Json.Linq;
 
-namespace OData4Soda
+namespace Service
 {
 	internal static class JsonExtensions
 	{

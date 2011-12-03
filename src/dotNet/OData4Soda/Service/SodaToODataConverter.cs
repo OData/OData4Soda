@@ -9,7 +9,7 @@ using Microsoft.Data.OData.Metadata;
 using Newtonsoft.Json.Linq;
 using Socrata;
 
-namespace OData4Soda
+namespace Service
 {
 	public class SodaToODataConverter
 	{
