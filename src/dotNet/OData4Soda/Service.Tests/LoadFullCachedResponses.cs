@@ -18,7 +18,13 @@ namespace Service.Tests
 		[Test]
 		public void EnsureTheConstantToGetTheTopLevelRequestGivesTheRightUrl()
 		{
-			TestData.TopLevelSodaResponse.Should().Be(new Uri("http://data.cityofchicago.org/views/z8bn-74gv.json"));
+			AssertShouldBeCachedReferenceTo(TestData.TopLevelSodaResponse, new Uri("http://data.cityofchicago.org/views/z8bn-74gv.json"));
+		}
+
+		private static void AssertShouldBeCachedReferenceTo(Uri query, Uri expected)
+		{
+			query.Should().Be(expected);
+			TestData.HaveCachedResponseFor(query).Should().BeTrue();
 		}
 	}
 }
