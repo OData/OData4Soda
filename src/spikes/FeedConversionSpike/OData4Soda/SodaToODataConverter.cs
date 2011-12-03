@@ -14,26 +14,6 @@ namespace OData4Soda
 {
     public class SodaToODataConverter
     {
-//        position
-//sid
-//updated
-//created at
-//created meta
-//updated at
-//updated meta
-//id
-
-        private static readonly string[] fieldsToIgnore = new string[] 
-        { 
-            "position",
-            "sid",
-            "id",
-            "created_at",
-            "created_meta",
-            "updated_at",
-            "updated_meta",
-        };
-
         public SodaToODataConverter(IODataResponseMessage message, Uri odataEndpointUri, Uri sodaEndpointUri)
         {
             this.Message = message;
@@ -54,7 +34,8 @@ namespace OData4Soda
             var meta = jsonObject.PropertyValue<JObject>("meta");
             var view = meta.PropertyValue<JObject>("view");
 
-            var model = BuildModel(view);
+            IList<string> fieldsToIgnore;
+            var model = BuildModel(view, out fieldsToIgnore);
 
             var settings = new ODataMessageWriterSettings()
             {
@@ -75,7 +56,9 @@ namespace OData4Soda
             var meta = jsonObject.PropertyValue<JObject>("meta");
             var view = meta.PropertyValue<JObject>("view");
 
-            var model = BuildModel(view);
+            IList<string> fieldsToIgnore;
+            var model = BuildModel(view, out fieldsToIgnore);
+
             var entitySet = model.EntityContainers.Single().EntitySets().Single();
 
             var settings = new ODataMessageWriterSettings()
@@ -98,7 +81,7 @@ namespace OData4Soda
                     entryMetadata.Id = (string)((JValue)entry.Property("id").Value).Value;
                     entryMetadata.TypeName = entitySet.ElementType.FullName();
 
-                    entryMetadata.Properties = ConvertProperties(entry);
+                    entryMetadata.Properties = ConvertProperties(entry, fieldsToIgnore);
 
                     entryMetadata.SetAnnotation(new AtomEntryMetadata()
                     {
@@ -119,7 +102,7 @@ namespace OData4Soda
             return new DateTimeOffset(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(secondsSinceEpoch), TimeSpan.Zero);
         }
 
-        private static IEnumerable<ODataProperty> ConvertProperties(JObject entry)
+        private static IEnumerable<ODataProperty> ConvertProperties(JObject entry, IEnumerable<string> fieldsToIgnore)
         {
             var properties = new List<ODataProperty>();
             foreach (var property in entry.Properties())
@@ -135,7 +118,7 @@ namespace OData4Soda
                 {
                     // TODO: recurse
                     var complex = new ODataComplexValue();
-                    complex.Properties = ConvertProperties((JObject)propertyValue);
+                    complex.Properties = ConvertProperties((JObject)propertyValue, fieldsToIgnore);
                     odataPropertyValue = complex;
                 }
                 else
@@ -149,41 +132,81 @@ namespace OData4Soda
             return properties;
         }
 
-        private static IEdmModel BuildModel(JObject viewObject)
+        private static IEdmModel BuildModel(JObject viewObject, out IList<string> fieldsToIgnore)
         {
             var model = new EdmModel();
+            fieldsToIgnore = new List<string>();
 
             var name = viewObject.PrimitivePropertyValue<string>("name");
             name = name.Replace(' ', '_');
 
-            var entityType = new EdmEntityType(false, true, null, "OData4Socrata", name, Enumerable.Empty<IEdmStructuralProperty>());
+            var entityType = new EdmEntityType(false, false, null, "OData4Socrata", name, Enumerable.Empty<IEdmStructuralProperty>());
             var entitySet = new EdmEntitySet(name, entityType);
 
-            foreach (var column in viewObject.ArrayPropertyValue<JObject>("columns"))
+            EdmComplexType phoneComplex = null;
+            EdmComplexType locationComplex = null;
+            EdmComplexType urlComplex = null;
+
+            foreach(var column in viewObject.ArrayPropertyValue<JObject>("columns"))
             {
+                var fieldName = column.PrimitivePropertyValue<string>("name");
+
                 var sodaType = column.PrimitivePropertyValue<string>("dataTypeName");
-                IEdmPrimitiveTypeReference typeReference;
+                IEdmTypeReference typeReference;
                 switch (sodaType)
                 {
                     case "meta_data":
+                        fieldsToIgnore.Add(fieldName);
                         continue;
-
+                        
                     case "text":
-                    case "url":
+                    
                         typeReference = EdmLibraryExtensions.GetPrimitiveTypeReference(typeof(string));
                         break;
 
+                    case "url":
+                        if (urlComplex == null)
+                        {
+                            urlComplex = new EdmComplexType(false, false, null, entityType.Namespace, "url");
+                            new EdmStructuralProperty(urlComplex, "url", EdmLibraryExtensions.GetPrimitiveTypeReference(typeof(string)), null, EdmConcurrencyMode.None);
+                            model.AddElement(urlComplex);
+                        }
+
+                        typeReference = new EdmComplexTypeReference(urlComplex, false);
+                        break;
+
                     case "phone":
+                        if (phoneComplex == null)
+                        {
+                            phoneComplex = new EdmComplexType(false, false, null, entityType.Namespace, "phone");
+                            new EdmStructuralProperty(phoneComplex, "phone_number", EdmLibraryExtensions.GetPrimitiveTypeReference(typeof(string)), null, EdmConcurrencyMode.None);
+                            new EdmStructuralProperty(phoneComplex, "phone_type", EdmLibraryExtensions.GetPrimitiveTypeReference(typeof(string)), null, EdmConcurrencyMode.None);
+                            model.AddElement(phoneComplex);
+                        }
+
+                        typeReference = new EdmComplexTypeReference(phoneComplex, false);
+                        break;
+
                     case "location":
-                        // TODO: build a complex
-                        typeReference = EdmLibraryExtensions.GetPrimitiveTypeReference(typeof(string));
+                        if (locationComplex == null)
+                        {
+                            locationComplex = new EdmComplexType(false, false, null, entityType.Namespace, "location");
+                            new EdmStructuralProperty(locationComplex, "human_address", EdmLibraryExtensions.GetPrimitiveTypeReference(typeof(string)), null, EdmConcurrencyMode.None);
+                            new EdmStructuralProperty(locationComplex, "latitude", EdmLibraryExtensions.GetPrimitiveTypeReference(typeof(string)), null, EdmConcurrencyMode.None);
+                            new EdmStructuralProperty(locationComplex, "longitude", EdmLibraryExtensions.GetPrimitiveTypeReference(typeof(string)), null, EdmConcurrencyMode.None);
+                            new EdmStructuralProperty(locationComplex, "machine_address", EdmLibraryExtensions.GetPrimitiveTypeReference(typeof(string)), null, EdmConcurrencyMode.None);
+                            new EdmStructuralProperty(locationComplex, "needs_recoding", EdmLibraryExtensions.GetPrimitiveTypeReference(typeof(bool)), null, EdmConcurrencyMode.None);
+                            model.AddElement(locationComplex);
+                        }
+
+                        typeReference = new EdmComplexTypeReference(locationComplex, false);
                         break;
 
                     default:
                         throw new Exception();
                 }
 
-                var property = new EdmStructuralProperty(entityType, column.PrimitivePropertyValue<string>("fieldName"), typeReference, null, EdmConcurrencyMode.None);
+                new EdmStructuralProperty(entityType, fieldName, typeReference, null, EdmConcurrencyMode.None);
             }
 
             model.AddElement(entityType);
