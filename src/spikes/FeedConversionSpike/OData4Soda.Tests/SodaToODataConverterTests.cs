@@ -1751,7 +1751,7 @@ namespace OData4Soda.Tests
         #endregion
 
         [TestMethod]
-        public void FeedTest()
+        public void FeedTestAtom()
         {
             var stream = new MemoryStream();
             var testMessage = new TestMessage() { Stream = stream };
@@ -1760,6 +1760,21 @@ namespace OData4Soda.Tests
             var payload = new JsonPayload(JsonText);
             converter.ConvertFeed(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative), payload);
             
+            var text = Encoding.UTF8.GetString(stream.ToArray());
+            Console.WriteLine(text);
+        }
+
+        [TestMethod]
+        public void FeedTestJson()
+        {
+            var stream = new MemoryStream();
+            var testMessage = new TestMessage() { Stream = stream };
+            testMessage.SetHeader("Content-Type", "application/json");
+
+            var converter = new SodaToODataConverter(testMessage, new Uri("http://fake"), new Uri("http://data.cityofchicago.org/views/z8bn-74gv"));
+            var payload = new JsonPayload(JsonText);
+            converter.ConvertFeed(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative), payload);
+
             var text = Encoding.UTF8.GetString(stream.ToArray());
             Console.WriteLine(text);
         }
