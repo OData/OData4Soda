@@ -18,8 +18,7 @@ namespace Service.Tests
 		private class TestMessage : IODataResponseMessage
 		{
 			private readonly Dictionary<string, string> headers = new Dictionary<string, string>();
-
-			public Stream Stream { get; set; }
+			public MemoryStream Stream = new MemoryStream();
 
 			#region IODataResponseMessage Members
 
@@ -57,29 +56,27 @@ namespace Service.Tests
 		[Test]
 		public void FeedTest()
 		{
-			var stream = new MemoryStream();
-			var testMessage = new TestMessage {Stream = stream};
+			var testMessage = new TestMessage();
 
 			var converter = new SodaToODataConverter(testMessage, new Uri("http://fake"), TestData.TopLevelSodaResponse);
 			var payload = new JsonPayload(TestData.SodaResponseFor(TestData.TopLevelSodaResponse));
 			converter.ConvertFeed(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative),
 			                      payload, FeedUpdateTime);
 
-			Approvals.Approve(Encoding.UTF8.GetString(stream.ToArray()) + "\r\n");
+			Approvals.Approve(Encoding.UTF8.GetString(testMessage.Stream.ToArray()) + "\r\n");
 		}
 
 		[Test]
 		public void MetadataTest()
 		{
-			var stream = new MemoryStream();
-			var testMessage = new TestMessage {Stream = stream};
+			var testMessage = new TestMessage();
 
 			var converter = new SodaToODataConverter(testMessage, new Uri("http://fake"), TestData.TopLevelSodaResponse);
 			var payload = new JsonPayload(TestData.SodaResponseFor(TestData.TopLevelSodaResponse));
 			converter.ConvertMetadata(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative),
 			                          payload);
 
-			Approvals.Approve(Encoding.UTF8.GetString(stream.ToArray()) + "\r\n");
+			Approvals.Approve(Encoding.UTF8.GetString(testMessage.Stream.ToArray()) + "\r\n");
 		}
 	}
 }
