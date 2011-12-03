@@ -1,19 +1,12 @@
-﻿using ApprovalTests;
-using ApprovalTests.Reporters;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace Service.Tests
 {
-	[TestFixture, UseReporter(typeof(DiffReporter))]
+	[TestFixture]
 	public class SodaToODataPayloadTransformation
 	{
 		[Test]
 		public void AlwaysPasses()
-		{
-		}
-
-		[Test]
-		public void ConstantlySeekingApproval()
 		{
 		}
 	}

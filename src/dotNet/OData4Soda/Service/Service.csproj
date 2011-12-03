@@ -31,6 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\lib\dotNet\Socrata\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\lib\dotNet\Socrata\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Socrata">
+      <HintPath>..\..\..\..\lib\dotNet\Socrata\Socrata.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
