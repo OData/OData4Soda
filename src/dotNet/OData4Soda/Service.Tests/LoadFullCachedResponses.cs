@@ -9,22 +9,23 @@ namespace Service.Tests
 	[TestFixture, UseReporter(typeof (DiffReporter))]
 	public class LoadFullCachedResponses
 	{
-		[Test]
-		public void LoadChicagoPoliceDepartments()
+		private static void AssertShouldBeCachedReferenceTo(Uri query, Uri expected)
 		{
-			Approvals.Approve(TestData.SodaResponseFor(new Uri("http://data.cityofchicago.org/views/z8bn-74gv.json")));
+			query.Should().Be(expected);
+			TestData.HaveCachedResponseFor(query).Should().BeTrue();
 		}
 
 		[Test]
 		public void EnsureTheConstantToGetTheTopLevelRequestGivesTheRightUrl()
 		{
-			AssertShouldBeCachedReferenceTo(TestData.TopLevelSodaResponse, new Uri("http://data.cityofchicago.org/views/z8bn-74gv.json"));
+			AssertShouldBeCachedReferenceTo(TestData.TopLevelSodaResponse,
+			                                new Uri("http://data.cityofchicago.org/views/z8bn-74gv.json"));
 		}
 
-		private static void AssertShouldBeCachedReferenceTo(Uri query, Uri expected)
+		[Test]
+		public void LoadChicagoPoliceDepartments()
 		{
-			query.Should().Be(expected);
-			TestData.HaveCachedResponseFor(query).Should().BeTrue();
+			Approvals.Approve(TestData.SodaResponseFor(new Uri("http://data.cityofchicago.org/views/z8bn-74gv.json")));
 		}
 	}
 }
