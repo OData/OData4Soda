@@ -6,4 +6,9 @@
   <InstrumentAssembly>true</InstrumentAssembly>
   <DefaultTestTimeout>60000</DefaultTestTimeout>
   <UseBuildConfiguration></UseBuildConfiguration>
+  <IgnoredTests>
+    <NamedTestSelector>
+      <TestName>Service.Tests.LoadFullCachedResponses.LoadChicagoPoliceDepartments</TestName>
+    </NamedTestSelector>
+  </IgnoredTests>
 </ProjectConfiguration>
