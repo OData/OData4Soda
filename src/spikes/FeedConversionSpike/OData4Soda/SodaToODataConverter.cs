@@ -78,8 +78,7 @@ namespace OData4Soda
 
         private static DateTimeOffset ConvertDateTimeOffset(int ticksSinceEpoch)
         {
-            var epoch = 
-            return new DateTimeOffset(new DateTime(1970, 1, 1, DateTimeKind.Utc).AddSeconds(
+        	return DateTimeOffset.FromFileTime(ticksSinceEpoch);
         }
 
         private static IEnumerable<ODataProperty> ConvertProperties(JObject entry)
