@@ -70,6 +70,10 @@
       <Project>{486A2169-945C-434C-8F77-4F3FAF458CDC}</Project>
       <Name>OData4Soda</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Socrata\Socrata.csproj">
+      <Project>{79B81EA2-03C6-4641-9DE9-21F0127EDE83}</Project>
+      <Name>Socrata</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -6,6 +6,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Data.OData;
 using System.IO;
 using System.Xml.Linq;
+using Socrata;
 
 namespace OData4Soda.Tests
 {
@@ -1755,10 +1756,11 @@ namespace OData4Soda.Tests
             var stream = new MemoryStream();
             var testMessage = new TestMessage() { Stream = stream };
 
-            var converter = new SodaToODataConverter();
             using (var writer = new ODataMessageWriter(testMessage))
             {
-                converter.ConvertToFeed(writer.CreateODataFeedWriter(), "http://data.cityofchicago.org/views/z8bn-74gv", JsonText);
+                var converter = new SodaToODataConverter(writer, new Uri("http://fake"), new Uri("http://data.cityofchicago.org/views/z8bn-74gv"));
+                var payload = new JsonPayload(JsonText);
+                converter.ConvertTopLevelJson(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative), payload);
             }
 
             var text = Encoding.UTF8.GetString(stream.ToArray());

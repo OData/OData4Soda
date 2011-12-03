@@ -55,6 +55,9 @@ namespace OData4Soda
             var feedWriter = this.Writer.CreateODataFeedWriter();
 
             var feed = new ODataFeed();
+
+            feed.Id = new Uri(this.ODataEndpointUri, relativeODataUri.OriginalString).OriginalString;
+
             feedWriter.WriteStart(feed);
             foreach (var entry in entries.Cast<JObject>())
             {
@@ -63,12 +66,12 @@ namespace OData4Soda
 
                 entryMetadata.Properties = ConvertProperties(entry);
 
-                var atom = new AtomEntryMetadata()
+                entryMetadata.SetAnnotation(new AtomEntryMetadata()
                 {
-                    Updated = ConvertDateTimeOffset((int)((JValue)entry.Property("updated_at").Value).Value),
-                    Published = ConvertDateTimeOffset((int)((JValue)entry.Property("created_at").Value).Value),
-                };
-
+                    Updated = ConvertDateTimeOffset((long)((JValue)entry.Property("updated_at").Value).Value),
+                    Published = ConvertDateTimeOffset((long)((JValue)entry.Property("created_at").Value).Value),
+                });
+                
                 feedWriter.WriteStart(entryMetadata);
                 feedWriter.WriteEnd();
             }
@@ -76,9 +79,9 @@ namespace OData4Soda
             feedWriter.WriteEnd();
         }
 
-        private static DateTimeOffset ConvertDateTimeOffset(int ticksSinceEpoch)
+        private static DateTimeOffset ConvertDateTimeOffset(long secondsSinceEpoch)
         {
-        	return DateTimeOffset.FromFileTime(ticksSinceEpoch);
+            return new DateTimeOffset(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(secondsSinceEpoch), TimeSpan.Zero);
         }
 
         private static IEnumerable<ODataProperty> ConvertProperties(JObject entry)
