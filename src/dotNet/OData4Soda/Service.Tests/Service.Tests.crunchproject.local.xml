@@ -5,5 +5,5 @@
   <PreviouslyBuiltSuccessfully>true</PreviouslyBuiltSuccessfully>
   <InstrumentAssembly>true</InstrumentAssembly>
   <DefaultTestTimeout>60000</DefaultTestTimeout>
-  <UseBuildConfiguration />
+  <UseBuildConfiguration></UseBuildConfiguration>
 </ProjectConfiguration>
