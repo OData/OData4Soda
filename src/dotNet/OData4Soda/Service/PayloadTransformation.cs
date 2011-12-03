@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Service
 {
-	public class Class1
+	public class PayloadTransformation
 	{
 	}
 }
