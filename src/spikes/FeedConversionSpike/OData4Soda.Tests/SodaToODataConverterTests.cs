@@ -1751,21 +1751,31 @@ namespace OData4Soda.Tests
         #endregion
 
         [TestMethod]
-        public void TestMethod1()
+        public void FeedTest()
         {
             var stream = new MemoryStream();
             var testMessage = new TestMessage() { Stream = stream };
 
-            using (var writer = new ODataMessageWriter(testMessage))
-            {
-                var converter = new SodaToODataConverter(writer, new Uri("http://fake"), new Uri("http://data.cityofchicago.org/views/z8bn-74gv"));
-                var payload = new JsonPayload(JsonText);
-                converter.ConvertTopLevelJson(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative), payload);
-            }
+            var converter = new SodaToODataConverter(testMessage, new Uri("http://fake"), new Uri("http://data.cityofchicago.org/views/z8bn-74gv"));
+            var payload = new JsonPayload(JsonText);
+            converter.ConvertFeed(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative), payload);
+            
+            var text = Encoding.UTF8.GetString(stream.ToArray());
+            Console.WriteLine(text);
+        }
+
+        [TestMethod]
+        public void MetadataTest()
+        {
+            var stream = new MemoryStream();
+            var testMessage = new TestMessage() { Stream = stream };
+
+            var converter = new SodaToODataConverter(testMessage, new Uri("http://fake"), new Uri("http://data.cityofchicago.org/views/z8bn-74gv"));
+            var payload = new JsonPayload(JsonText);
+            converter.ConvertMetadata(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative), payload);
 
             var text = Encoding.UTF8.GetString(stream.ToArray());
-            var xml = XElement.Parse(text);
-            Console.WriteLine(xml.ToString());
+            Console.WriteLine(text);
         }
 
         private class TestMessage : IODataResponseMessage
