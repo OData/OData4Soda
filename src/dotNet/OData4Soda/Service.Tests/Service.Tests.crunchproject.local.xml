@@ -16,5 +16,8 @@
     <NamedTestSelector>
       <TestName>Service.Tests.SodaToODataConverterTests.MetadataTest</TestName>
     </NamedTestSelector>
+    <NamedTestSelector>
+      <TestName>Service.Tests.SodaToODataConverterTests.FeedTestJson</TestName>
+    </NamedTestSelector>
   </IgnoredTests>
 </ProjectConfiguration>

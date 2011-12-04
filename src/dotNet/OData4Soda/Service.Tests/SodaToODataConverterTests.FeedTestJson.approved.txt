@@ -1,0 +1,423 @@
+{
+  "d":{
+    "results":[
+      {
+        "__metadata":{
+          "id":"8518106A-32BD-4BAC-885D-96B7FDB34F34","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"Headquarters","STATE":"IL","ADDRESS":"3510 S Michigan Ave","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          }
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.62330200626332","latitude":"41.83086072588734","human_address":"{\"address\":\"3510 S Michigan Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60653\"}"
+        },"ZIP":"60653","CITY":"Chicago"
+      },{
+        "__metadata":{
+          "id":"0FE31F03-2C78-46A1-BA7E-609DA3020BAB","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"1","STATE":"IL","ADDRESS":"1718 S State St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District1"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-745-4290"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.62734256712464","latitude":"41.85882087432612","human_address":"{\"address\":\"1718 S State St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60616\"}"
+        },"ZIP":"60616","TTY":"312-745-3693","CITY":"Chicago","FAX":"312-745-3694"
+      },{
+        "__metadata":{
+          "id":"FA1E611F-E3E2-4214-AB93-E9A2038FEBA4","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"2","STATE":"IL","ADDRESS":"5101 S Wentworth Ave","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District2"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-747-8366"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.630663656445","latitude":"41.8017738753714","human_address":"{\"address\":\"5101 S Wentworth Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60609\"}"
+        },"ZIP":"60609","TTY":"312-747-6656","CITY":"Chicago","FAX":"312-747-5396"
+      },{
+        "__metadata":{
+          "id":"4A4F311D-DB63-4971-87CA-98053B7001B6","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"3","STATE":"IL","ADDRESS":"7040 S Cottage Grove Ave","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District3"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-747-8201"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.6056617928308","latitude":"41.76697112291843","human_address":"{\"address\":\"7040 S Cottage Grove Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60637\"}"
+        },"ZIP":"60637","TTY":"312-747-9168","CITY":"Chicago","FAX":"312-747-5479"
+      },{
+        "__metadata":{
+          "id":"32F09548-7A6E-462C-86F1-78DE8AD333BA","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"4","STATE":"IL","ADDRESS":"2255 E 103rd St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District4"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-747-8205"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.56718279470178","latitude":"41.70778489172678","human_address":"{\"address\":\"2255 E 103rd St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60617\"}"
+        },"ZIP":"60617","TTY":"312-747-9169","CITY":"Chicago","FAX":"312-747-5276"
+      },{
+        "__metadata":{
+          "id":"1E67F8FC-0838-4DFA-942C-12C0DC9D862D","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"5","STATE":"IL","ADDRESS":"727 E 111th St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District5"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-747-8210"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.60536435875626","latitude":"41.69279473591493","human_address":"{\"address\":\"727 E 111th St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60628\"}"
+        },"ZIP":"60628","TTY":"312-747-9170","CITY":"Chicago","FAX":"312-747-5935"
+      },{
+        "__metadata":{
+          "id":"40CAE5DD-FAEB-4A1A-AD0A-AC77DD00D6ED","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"6","STATE":"IL","ADDRESS":"7808 S Halsted St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District6"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-745-3610"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.64414141672431","latitude":"41.7522817574851","human_address":"{\"address\":\"7808 S Halsted St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60620\"}"
+        },"ZIP":"60620","TTY":"312-745-3639","CITY":"Chicago","FAX":"312-745-3649"
+      },{
+        "__metadata":{
+          "id":"398DE9E3-1D18-4E57-A4D8-266C2EAFBB35","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"7","STATE":"IL","ADDRESS":"1438 W 63rd St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District7"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-747-8220"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.65945323490796","latitude":"41.77965870830844","human_address":"{\"address\":\"1438 W 63rd St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60636\"}"
+        },"ZIP":"60636","TTY":"312-747-6652","CITY":"Chicago","FAX":"312-747-6558"
+      },{
+        "__metadata":{
+          "id":"28CF2F81-9340-4AC2-AECD-38F67BEE89B2","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"8","STATE":"IL","ADDRESS":"3420 W 63rd St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District8"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-747-8730"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.70878104821506","latitude":"41.77899321000677","human_address":"{\"address\":\"3420 W 63rd St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60629\"}"
+        },"ZIP":"60629","TTY":"312-747-8116","CITY":"Chicago","FAX":"312-747-8545"
+      },{
+        "__metadata":{
+          "id":"A85194EE-7DD4-475F-9A11-C0524AD6227A","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"9","STATE":"IL","ADDRESS":"3120 S Halsted St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District9"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-747-8227"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.64661990954984","latitude":"41.83750310123302","human_address":"{\"address\":\"3120 S Halsted St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60608\"}"
+        },"ZIP":"60608","TTY":"312-747-9172","CITY":"Chicago","FAX":"312-747-5329"
+      },{
+        "__metadata":{
+          "id":"DEC786A2-F405-41A2-973E-ABD4C236120B","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"10","STATE":"IL","ADDRESS":"3315 W Ogden Ave","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District10"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-747-7511"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.70840333296276","latitude":"41.85636188418744","human_address":"{\"address\":\"3315 W Ogden Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60623\"}"
+        },"ZIP":"60623","TTY":"312-747-7471","CITY":"Chicago","FAX":"312-747-7429"
+      },{
+        "__metadata":{
+          "id":"B2F9A0B6-2D41-4630-86EA-4F2DA5F4DB1D","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"11","STATE":"IL","ADDRESS":"3151 W Harrison St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District11"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-746-8386"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.70519897133927","latitude":"41.873690811457","human_address":"{\"address\":\"3151 W Harrison St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60612\"}"
+        },"ZIP":"60612","TTY":"312-746-5151","CITY":"Chicago","FAX":"312-746-4281"
+      },{
+        "__metadata":{
+          "id":"F4078973-35B5-4994-AA4A-535B43185486","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"12","STATE":"IL","ADDRESS":"100 S Racine Ave","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District12"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-746-8396"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.65715796324291","latitude":"41.88031148430877","human_address":"{\"address\":\"100 S Racine Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60607\"}"
+        },"ZIP":"60607","TTY":"312-746-9868","CITY":"Chicago","FAX":"312-746-4248"
+      },{
+        "__metadata":{
+          "id":"6ACBC934-FEFF-495E-98A9-DBF3D5CC9AFF","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"13","STATE":"IL","ADDRESS":"937 N Wood St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District13"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-746-8350"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.67202575687757","latitude":"41.8988188771907","human_address":"{\"address\":\"937 N Wood St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60622\"}"
+        },"ZIP":"60622","TTY":"312-746-5999","CITY":"Chicago","FAX":"312-746-4235"
+      },{
+        "__metadata":{
+          "id":"7F0B1FDC-A9E2-4052-AF45-FA550F8BF23A","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"14","STATE":"IL","ADDRESS":"2150 N California Ave","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District14"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-744-8290"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.69732502896069","latitude":"41.92125066466082","human_address":"{\"address\":\"2150 N California Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60647\"}"
+        },"ZIP":"60647","TTY":"312-744-8260","CITY":"Chicago","FAX":"312-744-2422"
+      },{
+        "__metadata":{
+          "id":"257F40E6-2324-44DA-92FA-B1ADEA51DB2D","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"15","STATE":"IL","ADDRESS":"5701 W Madison St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District15"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-743-1440"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.76818126825033","latitude":"41.87978022983041","human_address":"{\"address\":\"5701 W Madison St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60644\"}"
+        },"ZIP":"60644","TTY":"312-743-1485","CITY":"Chicago","FAX":"312-743-1366"
+      },{
+        "__metadata":{
+          "id":"C27E321B-F628-4C79-86C7-D1B883E99568","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"16","STATE":"IL","ADDRESS":"5151 N Milwaukee Ave","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District16"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-742-4480"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.76623800785116","latitude":"41.974188798165315","human_address":"{\"address\":\"5151 N Milwaukee Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60630\"}"
+        },"ZIP":"60630","TTY":"312-742-4423","CITY":"Chicago","FAX":"312-742-4421"
+      },{
+        "__metadata":{
+          "id":"36EF271C-656B-4824-BD06-BD214B7F6A43","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"17","STATE":"IL","ADDRESS":"4650 N Pulaski Rd","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District17"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-742-4410"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.72816143794648","latitude":"41.966052192101166","human_address":"{\"address\":\"4650 N Pulaski Rd\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60630\"}"
+        },"ZIP":"60630","TTY":"312-742-5451","CITY":"Chicago","FAX":"312-742-5411"
+      },{
+        "__metadata":{
+          "id":"DAFF4553-A73E-4F3D-B6A6-D24714E919F4","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"18","STATE":"IL","ADDRESS":"1160 N Larrabee St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District18"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-742-5870"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.64353523498934","latitude":"41.90311763649074","human_address":"{\"address\":\"1160 N Larrabee St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60610\"}"
+        },"ZIP":"60610","TTY":"312-742-5773","CITY":"Chicago","FAX":"312-742-5771"
+      },{
+        "__metadata":{
+          "id":"72E37562-D949-469B-B5F4-563663571C5A","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"19","STATE":"IL","ADDRESS":"2452 W Belmont Ave","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District19"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-744-5983"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.6895222785126","latitude":"41.93948016174912","human_address":"{\"address\":\"2452 W Belmont Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60618\"}"
+        },"ZIP":"60618","TTY":"312-744-9872","CITY":"Chicago","FAX":"312-744-4437"
+      },{
+        "__metadata":{
+          "id":"62303A50-B037-4B66-BE35-96780CDECF8C","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"20","STATE":"IL","ADDRESS":"5400 N Lincoln Ave","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District20"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-742-8714"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.69301593304144","latitude":"41.97954202254066","human_address":"{\"address\":\"5400 N Lincoln Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60625\"}"
+        },"ZIP":"60625","TTY":"312-742-8841","CITY":"Chicago","FAX":"312-742-8803"
+      },{
+        "__metadata":{
+          "id":"3E813253-CA28-4675-BD5E-16F266242E67","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"21","STATE":"IL","ADDRESS":"300 E 29th St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District21"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-747-8340"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.62003595036374","latitude":"41.84226950798831","human_address":"{\"address\":\"300 E 29th St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60616\"}"
+        },"ZIP":"60616","TTY":"312-747-6655","CITY":"Chicago","FAX":"312-747-5919"
+      },{
+        "__metadata":{
+          "id":"4607A0F7-41A4-456F-B456-F820E7481A96","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"22","STATE":"IL","ADDRESS":"1900 W Monterey Ave","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District22"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-745-0570"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.66855780581959","latitude":"41.691350048962875","human_address":"{\"address\":\"1900 W Monterey Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60643\"}"
+        },"ZIP":"60643","TTY":"312-745-0569","CITY":"Chicago","FAX":"312-745-0814"
+      },{
+        "__metadata":{
+          "id":"6FFB5725-A09D-4F7C-9F90-A2DC8D7C33D1","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"23","STATE":"IL","ADDRESS":"850 W Addison St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District23"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-744-8320"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.64947786133158","latitude":"41.94665927496925","human_address":"{\"address\":\"3600 N Halsted St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60613\"}"
+        },"ZIP":"60613","TTY":"312-744-8011","CITY":"Chicago","FAX":"312-744-4481"
+      },{
+        "__metadata":{
+          "id":"B0C08223-F374-4039-904B-EE30B4AE1F88","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"24","STATE":"IL","ADDRESS":"6464 N Clark St","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District24"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-744-5907"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.67118638353655","latitude":"41.99944797184307","human_address":"{\"address\":\"6464 N Clark St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60626\"}"
+        },"ZIP":"60626","TTY":"312-744-7603","CITY":"Chicago","FAX":"312-744-6928"
+      },{
+        "__metadata":{
+          "id":"620E8058-C5ED-4D1F-81F9-FAFD04CC5143","type":"OData4Socrata.Police_Stations"
+        },"DISTRICT":"25","STATE":"IL","ADDRESS":"5555 W Grand Ave","WEBSITE":{
+          "__metadata":{
+            "type":"OData4Socrata.url"
+          },"url":"https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District25"
+        },"PHONE":{
+          "__metadata":{
+            "type":"OData4Socrata.phone"
+          },"phone_number":"312-746-8605"
+        },"LOCATION":{
+          "__metadata":{
+            "type":"OData4Socrata.location"
+          },"needs_recoding":false,"longitude":"-87.76465420759772","latitude":"41.91848587824693","human_address":"{\"address\":\"5555 W Grand Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60639\"}"
+        },"ZIP":"60639","TTY":"312-746-8383","CITY":"Chicago","FAX":"312-746-4353"
+      }
+    ]
+  }
+}

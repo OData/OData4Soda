@@ -63,6 +63,20 @@ namespace Service.Tests
 		}
 
 		[Test]
+		public void FeedTestJson()
+		{
+			var testMessage = new TestMessage();
+			testMessage.SetHeader("Content-Type", "application/json");
+
+			var converter = new SodaToODataConverter(testMessage, new Uri("http://fake"), TestData.TopLevelSodaResponse);
+			var payload = new JsonPayload(TestData.SodaResponseFor(TestData.TopLevelSodaResponse));
+			converter.ConvertFeed(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative),
+			                      payload, FeedUpdateTime);
+
+			Approvals.Approve(Encoding.UTF8.GetString(testMessage.Stream.ToArray()) + "\r\n");
+		}
+
+		[Test]
 		public void MetadataTest()
 		{
 			var testMessage = new TestMessage();
