@@ -11,6 +11,8 @@ namespace Service.Tests
 	public class SodaToODataConverterTests
 	{
 		private static readonly DateTimeOffset FeedUpdateTime = DateTimeOffset.Parse("2011-12-03T15:50:26-08:00");
+		private static readonly Uri RelativeUriOData = new Uri("/SomethingOData", UriKind.Relative);
+		private static readonly Uri RelativeUriSoda = new Uri("/SomethingSoda", UriKind.Relative);
 
 		[Test]
 		public void FeedTest()
@@ -19,10 +21,9 @@ namespace Service.Tests
 
 			var converter = new SodaToODataConverter(testMessage, new Uri("http://fake"), TestData.TopLevelSodaResponse);
 			var payload = new JsonPayload(TestData.SodaResponseFor(TestData.TopLevelSodaResponse));
-			converter.ConvertFeed(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative),
-			                      payload, FeedUpdateTime);
+			converter.ConvertFeed(RelativeUriOData, RelativeUriSoda, payload, FeedUpdateTime);
 
-			Approvals.Approve(Encoding.UTF8.GetString(testMessage.Stream.ToArray()) + "\r\n");
+			ApproveResponse(testMessage);
 		}
 
 		[Test]
@@ -33,10 +34,9 @@ namespace Service.Tests
 
 			var converter = new SodaToODataConverter(testMessage, new Uri("http://fake"), TestData.TopLevelSodaResponse);
 			var payload = new JsonPayload(TestData.SodaResponseFor(TestData.TopLevelSodaResponse));
-			converter.ConvertFeed(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative),
-			                      payload, FeedUpdateTime);
+			converter.ConvertFeed(RelativeUriOData, RelativeUriSoda, payload, FeedUpdateTime);
 
-			Approvals.Approve(Encoding.UTF8.GetString(testMessage.Stream.ToArray()) + "\r\n");
+			ApproveResponse(testMessage);
 		}
 
 		[Test]
@@ -46,9 +46,13 @@ namespace Service.Tests
 
 			var converter = new SodaToODataConverter(testMessage, new Uri("http://fake"), TestData.TopLevelSodaResponse);
 			var payload = new JsonPayload(TestData.SodaResponseFor(TestData.TopLevelSodaResponse));
-			converter.ConvertMetadata(new Uri("/SomethingOData", UriKind.Relative), new Uri("/SomethingSoda", UriKind.Relative),
-			                          payload);
+			converter.ConvertMetadata(RelativeUriOData, RelativeUriSoda, payload);
 
+			ApproveResponse(testMessage);
+		}
+
+		private static void ApproveResponse(InMemoryResponse testMessage)
+		{
 			Approvals.Approve(Encoding.UTF8.GetString(testMessage.Stream.ToArray()) + "\r\n");
 		}
 	}
