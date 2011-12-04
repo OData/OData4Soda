@@ -17,10 +17,15 @@ namespace Service.Tests
 
 		private class TestMessage : IODataResponseMessage
 		{
+			public readonly MemoryStream Stream = new MemoryStream();
 			private readonly Dictionary<string, string> headers = new Dictionary<string, string>();
-			public MemoryStream Stream = new MemoryStream();
 
-			#region IODataResponseMessage Members
+			public IEnumerable<KeyValuePair<string, string>> Headers
+			{
+				get { return headers; }
+			}
+
+			public int StatusCode { get; set; }
 
 			public string GetHeader(string headerName)
 			{
@@ -38,19 +43,10 @@ namespace Service.Tests
 				return Stream;
 			}
 
-			public IEnumerable<KeyValuePair<string, string>> Headers
-			{
-				get { return headers; }
-			}
-
 			public void SetHeader(string headerName, string headerValue)
 			{
 				headers[headerName] = headerValue;
 			}
-
-			public int StatusCode { get; set; }
-
-			#endregion
 		}
 
 		[Test]

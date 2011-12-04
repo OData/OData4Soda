@@ -47,7 +47,8 @@ namespace Service
 			}
 		}
 
-		public void ConvertFeed(Uri relativeODataUri, Uri relativeSodaUri, JsonPayload jsonPayload, DateTimeOffset feedUpdateTime)
+		public void ConvertFeed(Uri relativeODataUri, Uri relativeSodaUri, JsonPayload jsonPayload,
+		                        DateTimeOffset feedUpdateTime)
 		{
 			var jsonObject = jsonPayload.JsonObject;
 
